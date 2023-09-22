@@ -70,10 +70,12 @@ chmod +x restart.sh
 - To start the conversion process:
 
 Something Extra
-`-custom-proxy` | For custom Proxy Server
-`-use-shaka` | For Shaka Packager
-`-log-no-print` | Log output of ffmpeg and N_m3u8D-RE and hide print while running.
-`-no-logs-or-print` | Does not log ffmpeg and N_m3u8D-RE and hide as well prints while running.
+```bash
+-custom-proxy # For custom Proxy Server
+-use-shaka # For Shaka Packager
+-log-no-print # Log output of ffmpeg and N_m3u8D-RE and hide print while running.
+-no-logs-or-print # Does not log ffmpeg and N_m3u8D-RE and hide as well prints while running.
+```
 
 For debug or inspect you can use:
 ```bash
