@@ -69,6 +69,16 @@ chmod +x restart.sh
 
 - To start the conversion process:
 
+Without Shaka Packager
+```bash
+./mpd2hls_v2.sh -folder StreamFolder_Name -file NameOfFile_WITHOUT_EXTENSIONS -url "Stream_URL" -key "your_key_and_kid_here" &
+```
+
+With Shaka Packager
+```bash
+./mpd2hls_v2.sh -folder StreamFolder_Name -file NameOfFile_WITHOUT_EXTENSIONS -url "Stream_URL" -key "your_key_and_kid_here" -shaka &
+```
+
 Something Extra
 ```bash
 -custom-proxy # For custom Proxy Server
@@ -86,18 +96,7 @@ or
 tail -f logs/N_m3u8DL_RE
 ```
 
-
-Without Shaka Packager
-```bash
-./mpd2hls_v2.sh -folder StreamFolder_Name -file NameOfFile_WITHOUT_EXTENSIONS -url "Stream_URL" -key "your_key_and_kid_here"
-```
-
-With Shaka Packater
-```bash
-./mpd2hls_v2.sh -folder StreamFolder_Name -file NameOfFile_WITHOUT_EXTENSIONS -url "Stream_URL" -key "your_key_and_kid_here" -shaka
-```
-
-You can also use `--custom-proxy IP:PORT` to use the proxy with the script.
+You can also use `-custom-proxy IP:PORT` to use the proxy with the script.
 
 - To stop the conversion process for a specific instance:
 
