@@ -112,10 +112,8 @@ echo "Use stop.sh to stop this instance"
 echo "please wait for 40sec for m3u8 file to be generated in the /var/www/html/$FOLDER/$FILE.m3u8"
 echo "Your stream should be available at: http://$server_ip/$FOLDER/$FILE.m3u8"
 echo "Hit enter to continue using this terminal"
-exit 1
 
 # Wait for both processes to complete
-wait $PID_N_m3u8DL_RE
 wait $PID_ffmpeg
 
 # Clean up the temporary folders/files and process ID files
